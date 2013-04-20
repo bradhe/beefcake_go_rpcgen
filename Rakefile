@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "beefcake_go_rpcgen"
   gem.homepage = "http://github.com/bradhe/beefcake_go_rpcgen"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Go RPCGen backend for Beefcake}
+  gem.description = %Q{An implementation of the Go RPCGen protocol}
   gem.email = "brad@cloudability.com"
   gem.authors = ["Brad Heller"]
   # dependencies defined in Gemfile
@@ -31,7 +31,7 @@ RSpec::Core::RakeTask.new(:spec) do |spec|
   spec.pattern = FileList['spec/**/*_spec.rb']
 end
 
-RSpec::Core::RakeTask.new(:rcov) do |spec|
+RSpec::Core::RakeTask.new do |spec|
   spec.pattern = 'spec/**/*_spec.rb'
   spec.rcov = true
 end
@@ -40,3 +40,11 @@ task :default => :spec
 
 require 'yard'
 YARD::Rake::YardocTask.new
+
+Dir[File.expand_path('../lib/tasks/*.rake', __FILE__)].each do |rake_file|
+  load rake_file
+end
+
+task :environment do
+  # TODO: Anything...
+end
