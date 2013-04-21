@@ -9,25 +9,27 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Brad Heller"]
-  s.date = "2013-04-20"
+  s.date = "2013-04-21"
   s.description = "An implementation of the Go RPCGen protocol"
   s.email = "brad@cloudability.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     ".document",
+    ".gitignore",
     ".rspec",
     ".rvmrc",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.md",
     "Rakefile",
     "VERSION",
+    "beefcake_go_rpcgen.gemspec",
+    "lib/beefcake/client_backends/go_rpcgen_backend.rb",
     "lib/beefcake_go_rpcgen.rb",
-    "lib/tasks/protoc.rake",
     "lib/wire/.gitkeep",
     "lib/wire/wire.pb.rb",
     "lib/wire/wire.proto",

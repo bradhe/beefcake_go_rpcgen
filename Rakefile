@@ -21,6 +21,10 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{An implementation of the Go RPCGen protocol}
   gem.email = "brad@cloudability.com"
   gem.authors = ["Brad Heller"]
+  gem.files = `git ls-files .`.split("\n").reject! do |file|
+    file.start_with?('spec')
+    file.start_with?('lib/tasks')
+  end
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
