@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:bradhe/beefcake.git
-  revision: bdf0521efabf1c31a8ae88b839d072950b4802ea
+  revision: 5db218816a38d9e74c6ed06b4def1dbacfd87204
   specs:
     beefcake (0.3.8)
 
