@@ -1,8 +1,8 @@
-## Generated from config/wire.proto for wire
+## Generated from lib/wire/wire.proto for wire
 require "beefcake"
 
 
-class header
+class Header
   include Beefcake::Message
 
 
