@@ -8,5 +8,5 @@ require 'beefcake_go_rpcgen'
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
 RSpec.configure do |config|
-  
+  # TODO: Anything.
 end
