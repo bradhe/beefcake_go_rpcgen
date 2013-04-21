@@ -3,6 +3,23 @@
 An implementation of the [Go RPCGEN RPC
 protocol](https://github.com/kylelemons/go-rpcgen/) for Beefcake client stubs.
 
+## How to use this gem
+
+All you need to do is install it and require it. Assuming Beefcake is present,
+everything will be configured for you!
+
+``` bash
+$ gem install beecake_go_rpcgen
+```
+
+``` ruby
+require "beefcake"
+require "beefcake_go_rpcgen"
+```
+
+Now, any communication over RPC clients will use this protocol!
+
+
 ## Contributing to beefcake_go_rpcgen
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
