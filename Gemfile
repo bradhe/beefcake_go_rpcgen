@@ -1,5 +1,8 @@
 source "http://rubygems.org"
 
+#ruby=2.1.2
+#ruby-gemset=beefcake_go_rpcgen
+
 gem 'beefcake', git: 'git@github.com:bradhe/beefcake.git'
 
 # Add dependencies to develop your gem here.
